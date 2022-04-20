@@ -1,10 +1,10 @@
 package com.aeviles.myproject.repository;
 
-import com.aeviles.myproject.model.CategoryModel;
 
+import com.aeviles.myproject.model.ProductModel;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
+import org.springframework.stereotype.Repository;
 
 
 
@@ -14,8 +14,8 @@ import org.springframework.stereotype.Repository;
 * omo um repositório de banco de dados;
 * */
 @Repository
-public interface CategoryRepository extends JpaRepository<CategoryModel, Long> {
+public interface ProductRepository extends JpaRepository<ProductModel, Long> {
 
-
+    //o Jpa Já possui findAll, findById, save, delete....
 
 }
